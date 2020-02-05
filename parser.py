@@ -11,7 +11,7 @@ def get_element():
     empty_page_count = 0
     page_number = 1  # Номер страницы каталога
 
-    while empty_page_count <= 4 and page_number <= 3:
+    while empty_page_count <= 4:
         settings = {'rent': {
             'url': f'https://anflat.ru/api/catalog/rent/apartments/?limit_delta=0&filter%5Bobject_type%5D=apartments&filter%5Blocality%5D=kazan&order=1&page={page_number}&lang=ru',
             'file_name': 'dict_rent_apartments.json'},
